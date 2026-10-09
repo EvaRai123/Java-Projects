@@ -1,17 +1,16 @@
 # Java-Projects
-# Study Tracker Quiz
+# SQLite Flashcard App
 
-A simple Java console app built to quickly test yourself on CS topics and see exactly where you screwed up.
+A Java desktop application built with a graphical user interface (GUI) and an integrated database to store, manage, and test yourself on study flashcards.
 
 ## Why I Built This
-In integrated coaching schools, you get buried under weekly tests and never have time to actually analyze what topics you are failing in. I built this tool to automatically track my quiz answers and output exactly which topics need revision so I don't waste time guessing.
+Preparing for competitive exams means dealing with a massive number of formulas, concepts, and definitions. Traditional paper flashcards are easy to lose, and basic terminal programs wipe all your saved data the moment you close the application. I built this desktop app to create a permanent, digital study system that saves my study sets to a database and lets me run quick, randomized review sessions before exams.
 
-## Current Features
-* A text-based quiz that maps each question to a specific topic (like Loops or Syntax).
-* A rough character-matching logic that checks for typos so you don't get marked wrong just for a spelling slip.
-* A summary at the end that lists your weak areas so you know what to open your textbook to.
+## Key Features
+- Visual Interface: Replaces the standard command terminal with a proper Java Swing desktop window containing organized input fields and action buttons.
+- Permanent Data Storage: Uses an integrated SQLite database (flashcards.db) via JDBC prepared statements to ensure study cards are never lost when the app shuts down.
+- Data Management: Full capability to add new flashcards, display the entire collection in a scrollable view, update existing details, or delete specific entries by ID.
+- Randomized Review Mode: Pulls a random card from the database to test your knowledge, checking your typed input against the correct answer.
 
-## Next Steps
-* Move it out of the BlueJ terminal and make a real desktop app with buttons.
-* Add text file saving so it remembers your high scores.
-
+## Requirements
+The project is built using native Java libraries and requires the SQLite JDBC driver (.jar file) added to your project dependencies or classpath to handle the database connectivity.
